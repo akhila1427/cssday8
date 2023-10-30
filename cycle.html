@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+.spin{ border: 2px solid black;width: 50px; height: 50px;border-radius: 50%;}
+.spin{background-image: conic-gradient(red,green,yellow,violet,blue,orange);}
+.spin{
+  position: relative;
+  bottom: 500px;
+  left: 270px;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+.whe{ border: 2px solid black;width: 5px; height: 23px;position: relative;
+  bottom: 502px;
+  left: 295px;
+}
+.whe{animation-iteration-count: infinite;
+  animation-name: exa;
+  animation-duration: 1s;
+  animation-timing-function: linear;}
+ .whe{ background-image: linear-gradient(to right,brown,black);}
+
+@keyframes example{
+            from{transform: rotate(0deg);}
+            to{
+                transform: rotate(360deg);
+            }}
+        
+            
+</style>
+<body>
+<img src="./ca.jpg" width="500px">
+<div class="spin"></div>
+<div class="whe"></div>
+
+</body>
+</html>
